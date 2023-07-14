@@ -9,6 +9,13 @@
 </head>
 <body>
   <div id="container"></div>
+  <div class="controls">
+    <button onClick="window.location.reload();">Reset</button>
+    <label for="size">Please enter a grid size</label>
+    <input type="number" id="rows" name="rows" min="1" max="100">
+    <input type="number" id="cols" name="cols" min="1" max="100">
+    <button onclick="add(document.getElementById('rows').value, document.getElementById('cols').value)">Add</button>
+  </div>
 
 <script src="js.js"></script>
 </body>

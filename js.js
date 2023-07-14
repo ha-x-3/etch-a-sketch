@@ -1,4 +1,6 @@
 const container = document.getElementById('container');
+const userInputRow = document.getElementById("rows");
+const userInputColumn = document.getElementById("cols");
 
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
@@ -11,3 +13,20 @@ function makeRows(rows, cols) {
 };
 
 makeRows(16, 16);
+
+updateGrid = () => {
+  container.innerHTML = "";
+  container.style.setProperty(
+    "grid-template-columns",
+    `repeat(${userInputColumn.value}, 2fr)`
+    );
+  container.style.setProperty(
+    "grid-template-rows",
+    `repeat(${userInputRow.value}, 2fr)`
+    );
+}
+
+const square = document.querySelector("div");
+square.addEventListener("mouseover", function(event) {
+  event.target.classList.add("hover");
+})
