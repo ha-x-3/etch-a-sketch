@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Etch-A-Sketch</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+   
 </head>
 <body>
   <h1>Etch-A-Sketch</h1>
@@ -16,11 +16,11 @@
   </div>
   <div class="container"></div>
   <div class="footer">
-    <button>Black</button>
-    <button>Random</button>
-    <button onClick="window.location.reload();">Reset</button>
+    <button id="blackBtn" onclick="setColor('black')">Black</button>
+    <button id="randomBtn" onclick="setColor('random')">Random</button>
+    <button onclick="window.location.reload();">Reset</button>
   </div>
 
-  
+ <script src="script.js"></script>
 </body>
 </html>
