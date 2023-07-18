@@ -3,22 +3,38 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: rgb(224, 218, 135);
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+input {
+  font-size: 1.5rem;
+  margin-left: 10px;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 400px;
-  justify-content: space-around;
+  width: 600px;
+  justify-content: space-between;
   margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 500px;
+  width: 600px;
   align-items: center;
   margin-top: 20px;
 }
@@ -27,9 +43,27 @@ body {
   width: 500px;
   height: 500px;
   display: grid;
-  border: 1px solid black
+  border: 50px solid rgb(160, 13, 13);
+  background-color: white;
+  border-radius: 8px;
 }
 
-.hover {
+#blackBtn {
   background-color: black;
+  color: white;
+}
+
+#randomBtn {
+  background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+  color: white;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+.footer button {
+  width: 150px;
+
 }
