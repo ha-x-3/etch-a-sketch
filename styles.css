@@ -5,6 +5,9 @@ body {
   flex-direction: column;
   font-family: "Trebuchet MS", sans-serif;
   background-color: rgb(224, 218, 135);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 button {
@@ -15,9 +18,16 @@ button {
   border: 1px solid black;
 }
 
-input {
-  font-size: 1.5rem;
+.header input {
   margin-left: 10px;
+}
+
+.header label {
+  font-size: 1.5rem;
+}
+
+h1 {
+  margin: 0;
 }
 
 .header {
@@ -26,7 +36,7 @@ input {
   align-items: center;
   width: 600px;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 1.5rem;
 }
 
@@ -36,7 +46,7 @@ input {
   justify-content: space-between;
   width: 600px;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .container {
@@ -48,7 +58,15 @@ input {
   border-radius: 8px;
 }
 
-#blackBtn {
+#colorInput {
+  border-radius: 8px;
+  width: 100px;
+  height: 55px;  
+  overflow: hidden;
+  padding: 0;
+}
+
+#drawBtn {
   background-color: black;
   color: white;
 }
@@ -64,6 +82,15 @@ input {
 }
 
 .footer button {
-  width: 150px;
+  width: 125px;
+}
 
+#new-grid {
+  width: 60px;
+}
+
+.footer label {
+  padding: 0;
+  width: 50px;
+  text-align: right;
 }

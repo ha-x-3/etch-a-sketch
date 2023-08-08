@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Etch-A-Sketch</title>
   <link rel="stylesheet" href="styles.css">
-   
+  <link rel="icon" href="./img/icons8-draw-16.png"
 </head>
 <body>
   <h1>Etch-A-Sketch</h1>
@@ -16,10 +16,13 @@
   </div>
   <div class="container"></div>
   <div class="footer">
-    <button id="blackBtn" onclick="setColor('black')">Black</button>
+    <label for="colorInput">Pick a color:</label>
+    <input type="color" id="colorInput" name="colorInput" value="#000000" />
+    <button id="drawBtn" onclick="setColor(colorInput)">Draw</button>
     <button id="randomBtn" onclick="setColor('random')">Random</button>
     <button onclick="window.location.reload();">Reset</button>
   </div>
+  <footer><a target="_blank" href="https://icons8.com/icon/64528/paint-palette">Draw</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></footer>
 
  <script src="script.js"></script>
 </body>

@@ -49,11 +49,12 @@ window.addEventListener("load", function() {
 });
 
 function colorDiv() {
+  let colorInput = document.getElementById("colorInput");
   if(click) {
     if (color == "random") {
       this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
     } else {
-      this.style.backgroundColor = "black";
+      this.style.backgroundColor = colorInput.value;
     }
   }
 }
